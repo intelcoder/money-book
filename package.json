@@ -11,7 +11,7 @@
     "test": "jest --watchAll",
     "storybook": "start-storybook -p 7007 -h 192.168.0.12",
     "build-storybook": "build-storybook",
-    "lint": "eslint  ./components/**/*.tsx --fix "
+    "lint": "tslint --config .tslint.json  ./components/**/*.tsx --fix "
   },
   "jest": {
     "preset": "jest-expo",
@@ -40,9 +40,11 @@
     "expo-splash-screen": "~0.14.0",
     "expo-status-bar": "~1.2.0",
     "expo-web-browser": "~10.1.0",
+    "module-alias": "^2.2.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
+    "react-native-fast-image": "^8.5.11",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.10.1",
     "react-native-vector-icons": "^9.1.0",
@@ -63,6 +65,7 @@
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
     "babel-loader": "^8.2.4",
+    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^8.13.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-universe": "^11.0.0-beta.0",
@@ -71,6 +74,11 @@
     "jest-expo": "~44.0.1",
     "prettier": "^2.6.2",
     "react-test-renderer": "17.0.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-consistent-codestyle": "^1.16.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-microsoft-contrib": "^6.2.0",
     "typescript": "~4.3.5"
   },
   "private": true

@@ -1,6 +1,6 @@
 import Block from '@atoms/Block/Block'
 import Text from '@atoms/Text/Text'
-import { _Container } from './styled'
+import { Container } from './styled'
 import { HomeSnapshotCardProps } from './types'
 
 const SPENDING_TYPE = {
@@ -8,13 +8,11 @@ const SPENDING_TYPE = {
   INCOME: '수입',
 }
 
-const HomeSnapshotCard = ({ type = 'EXPENSE', amount }: HomeSnapshotCardProps) => {
+export default function HomeSnapshotCard({ type = 'EXPENSE', amount }: HomeSnapshotCardProps) {
   return (
-    <_Container fluid bgColor="yellow" roundCorner justify="space-between">
-      <Text text={SPENDING_TYPE[type]} size="sm" />
-      <Text text={`$${amount}`} size="md" />
-    </_Container>
+    <Container fluid bgColor="yellow" roundCorner justify="space-between">
+      <Text size="sm">{SPENDING_TYPE[type]}</Text>
+      <Text size="md">{`$${amount}`}</Text>
+    </Container>
   )
 }
-
-export default HomeSnapshotCard

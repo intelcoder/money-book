@@ -13,12 +13,12 @@ const getColor = ({ colors, color }: getColorProps) => {
       return 'grey'
     case 'red':
       return colors.red
+    default:
+      return colors.fontBase
   }
-
-  return colors.fontBase
 }
 
-export const _Text = styled.Text<_TextStyledProps>`
+export const AppText = styled.Text<_TextStyledProps>`
   font-weight: ${({ theme: { font }, weight = 'medium' }) => font.weight[weight]};
   color: ${({ theme: { colors }, color = 'base' }) => getColor({ colors, color })};
   font-size: ${({ theme: { font }, size = 'sm' }) => font.size[size]}px;

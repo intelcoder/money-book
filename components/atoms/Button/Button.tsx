@@ -1,4 +1,4 @@
-import { _Button } from './styled'
+import { AppButton } from './styled'
 import { ButtonProps } from './types'
 
 function Button({
@@ -11,7 +11,7 @@ function Button({
   bgColor,
 }: ButtonProps) {
   return (
-    <_Button
+    <AppButton
       size={size}
       bgColor={bgColor}
       onPress={onPress}
@@ -19,7 +19,7 @@ function Button({
       rounded={rounded}
       roundCorner={roundCorner}>
       {children}
-    </_Button>
+    </AppButton>
   )
 }
 

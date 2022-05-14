@@ -1,11 +1,11 @@
-import { _Block } from './styled'
+import { StyledBlock } from './styled'
 import { BlockProps } from './types'
 
 function Block({
   onPress = () => {},
   fluid,
-  rounded,
-  roundCorner,
+  rounded = false,
+  roundCorner = false,
   children,
   size,
   bgColor,
@@ -15,7 +15,7 @@ function Block({
   style = {},
 }: BlockProps) {
   return (
-    <_Block
+    <StyledBlock
       size={size}
       bgColor={bgColor}
       onPress={onPress}
@@ -27,7 +27,7 @@ function Block({
       align={align}
       style={style}>
       {children}
-    </_Block>
+    </StyledBlock>
   )
 }
 

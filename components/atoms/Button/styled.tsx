@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components/native'
 import { _ButtonProps } from './types'
 
-export const _Button = styled.Pressable<_ButtonProps>`
+export const AppButton = styled.Pressable<_ButtonProps>`
   background-color: ${({ theme: { colors }, bgColor = 'transparent' }) => colors[bgColor]};
   align-items: center;
   justify-content: center;

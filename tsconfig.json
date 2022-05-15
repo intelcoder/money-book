@@ -11,17 +11,12 @@
       "@screens/*": ["./src/screens/*"],
       "@navigations/*": ["./src/navigation/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@constants/*": ["./src/constants/*"]
+      "@constants/*": ["./src/constants/*"],
+      "@modal/*": ["./src/Modal/*"]
     }
   },
   "include": [
     "src/**/*",
-    "atoms/**/*",
-    "components/**/*",
-    "theme/**/*",
-    "screens/**/*",
-    "hooks/**/*",
-    "navigations/**/*"
   ],
   "exclude": ["node_modules"]
 }

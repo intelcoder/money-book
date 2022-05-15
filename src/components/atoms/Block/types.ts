@@ -1,6 +1,6 @@
-import { GestureResponderEvent } from 'react-native'
+import { GestureResponderEvent, StyleProp, ViewStyle, ViewProps } from 'react-native'
 
-export interface BlockProps {
+export interface BlockProps extends ViewProps {
   onPress?: (event: GestureResponderEvent) => void
   fluid?: boolean
   rounded?: boolean
@@ -11,6 +11,7 @@ export interface BlockProps {
   flex?: number
   justify?: 'center' | 'space-between' | 'flex-start' | 'flex-end' | 'flex'
   align?: 'center' | 'flex-start' | 'flex-end' | 'stretch'
+  style?: StyleProp<ViewStyle>
 }
 
-export interface BlockStyledProps extends Omit<BlockProps, 'onPress' | 'children'> {}
+export type BlockStyledProps = Omit<BlockProps, 'children'>

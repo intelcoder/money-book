@@ -2,7 +2,6 @@ import { StyledBlock } from './styled'
 import { BlockProps } from './types'
 
 function Block({
-  onPress = () => {},
   fluid,
   rounded = false,
   roundCorner = false,
@@ -18,7 +17,6 @@ function Block({
     <StyledBlock
       size={size}
       bgColor={bgColor}
-      onPress={onPress}
       fluid={fluid}
       rounded={rounded}
       roundCorner={roundCorner}

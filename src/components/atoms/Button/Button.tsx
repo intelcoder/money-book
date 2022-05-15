@@ -1,15 +1,15 @@
-import { AppButton } from './styled'
-import { ButtonProps } from './types'
+import { AppButton } from '@atoms/Button/styled'
+import { IButtonProps } from '@atoms/Button/types'
 
-function Button({
-  onPress = () => {},
+export default function Button({
+  onPress,
   fluid,
   rounded,
   roundCorner,
   children,
   size,
   bgColor,
-}: ButtonProps) {
+}: IButtonProps) {
   return (
     <AppButton
       size={size}
@@ -22,5 +22,3 @@ function Button({
     </AppButton>
   )
 }
-
-export default Button

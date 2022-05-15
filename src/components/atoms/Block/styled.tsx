@@ -5,9 +5,10 @@ const PADDING_SIZE = {
   sm: '4px 10px',
   md: '4px 12px',
   lg: '4px 24px',
-}
+} as const
+
 // eslint-disable-next-line import/prefer-default-export
-export const StyledBlock = styled.Pressable<BlockStyledProps>`
+export const StyledBlock = styled.View<BlockStyledProps>`
   background-color: ${({ theme: { colors }, bgColor = 'transparent' }) => colors[bgColor]};
   align-items: ${({ align }) => align || 'stretch'};
   justify-content: ${({ justify }) => justify || 'flex-start'};

@@ -1,6 +1,6 @@
 import { GestureResponderEvent } from 'react-native'
 
-export interface ButtonProps {
+export interface IButtonProps {
   onPress?: (event: GestureResponderEvent) => void
   fluid?: boolean
   rounded?: boolean
@@ -10,4 +10,4 @@ export interface ButtonProps {
   size?: 'sm' | 'md' | 'lg'
 }
 
-export interface _ButtonProps extends Omit<ButtonProps, 'onPress' | 'children'> {}
+export interface _ButtonProps extends Omit<IButtonProps, 'onPress' | 'children'> {}

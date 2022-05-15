@@ -7,7 +7,7 @@ module.exports = function (api) {
       [
         'module-resolver',
         {
-          root: ['.'],
+          root: ['./'],
           alias: {
             '@constants': './src/constants',
             '@components': './src/components',
@@ -16,6 +16,7 @@ module.exports = function (api) {
             '@screens': './src/screens',
             '@theme': './src/theme',
             '@hooks': './src/hooks',
+            '@modal': './src/Modal',
           },
           extensions: [
             '.ios.js',

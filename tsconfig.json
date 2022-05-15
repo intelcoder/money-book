@@ -1,18 +1,27 @@
 {
   "extends": "expo/tsconfig.base",
-
   "compilerOptions": {
     "strict": true,
     "baseUrl": "./",
     "jsx": "react-jsx",
     "paths": {
-      "*": ["./app/*"],
-      "@components/*": ["./components/*"],
-      "@atoms/*": ["./components/atoms/*"],
-      "@theme/*": ["./theme/*"],
-      "@screen/*": ["./theme/*"]
+      "@components/*": ["./src/components/*"],
+      "@atoms/*": ["./src/components/atoms/*"],
+      "@theme/*": ["./src/theme/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@navigations/*": ["./src/navigation/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@constants/*": ["./src/constants/*"]
     }
   },
-  "include": ["components/**/*", "theme/**/*", "screens/**/*", "hooks/**/*", "navigation/**/*"],
+  "include": [
+    "src/**/*",
+    "atoms/**/*",
+    "components/**/*",
+    "theme/**/*",
+    "screens/**/*",
+    "hooks/**/*",
+    "navigations/**/*"
+  ],
   "exclude": ["node_modules"]
 }

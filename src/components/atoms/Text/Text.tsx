@@ -1,4 +1,5 @@
 import { AppText } from './styled'
+import { _TextProps } from './types'
 
 function Text({ children, weight = 'medium', size = 'sm', color = 'base' }: _TextProps) {
   return (
@@ -6,15 +7,6 @@ function Text({ children, weight = 'medium', size = 'sm', color = 'base' }: _Tex
       {children}
     </AppText>
   )
-}
-
-export type WeightType = 'light' | 'medium' | 'bold'
-export type SizeType = 'sm' | 'md' | 'lg'
-interface _TextProps {
-  children: JSX.Element | string
-  weight: WeightType
-  size: SizeType
-  color: 'white' | 'red' | 'base'
 }
 
 export default Text

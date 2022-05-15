@@ -9,12 +9,13 @@ module.exports = function (api) {
         {
           root: ['.'],
           alias: {
-            '@constants': './constants',
-            '@components': './components',
-            '@atoms': './components/atoms',
-            '@navigation': './navigation',
-            '@screens': './screens',
-            '@theme': './theme',
+            '@constants': './src/constants',
+            '@components': './src/components',
+            '@atoms': './src/components/atoms',
+            '@navigations': './src/navigation',
+            '@screens': './src/screens',
+            '@theme': './src/theme',
+            '@hooks': './src/hooks',
           },
           extensions: [
             '.ios.js',

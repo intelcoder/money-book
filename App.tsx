@@ -2,10 +2,10 @@ import { StatusBar } from 'expo-status-bar'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import styled, { ThemeProvider } from 'styled-components/native'
 
-import useCachedResources from './hooks/useCachedResources'
-import useColorScheme from './hooks/useColorScheme'
-import Navigation from './navigation'
-import theme from './theme/theme'
+import useCachedResources from '@hooks/useCachedResources'
+import useColorScheme from '@hooks/useColorScheme'
+import Navigation from '@navigations'
+import theme from '@theme/theme'
 
 import {} from 'styled-components'
 declare module 'styled-components' {

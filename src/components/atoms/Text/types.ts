@@ -6,12 +6,13 @@ export type WeightType = 'light' | 'medium' | 'bold'
 
 export interface _TextProps {
   text: string
-  weight?: WeightType
-  size?: Sizetype
-  color?: ColorType
+  weight: WeightType
+  size: Sizetype
+  color: ColorType
+  children: string
 }
 
-export interface _TextStyledProps extends Pick<_TextProps, 'weight' | 'size' | 'color'> {}
+export type _TextStyledProps = Pick<_TextProps, 'weight' | 'size' | 'color'>
 
 export interface getColorProps {
   colors: Colors

@@ -7,4 +7,5 @@ export const AppInput = styled.TextInput<InputProps>`
     `
     borderBottomWidth: 1px;
   `}
+  height: 36px;
 `

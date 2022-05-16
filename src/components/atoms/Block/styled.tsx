@@ -12,6 +12,7 @@ export const StyledBlock = styled.View<BlockStyledProps>`
   background-color: ${({ theme: { colors }, bgColor = 'transparent' }) => colors[bgColor]};
   align-items: ${({ align }) => align || 'stretch'};
   justify-content: ${({ justify }) => justify || 'flex-start'};
+  flex-direction: ${({ flexDirection = 'column' }) => flexDirection};
   width: ${({ fluid }) => (fluid ? '100%' : 'auto')};
   border-radius: ${({ rounded, roundCorner }) => {
     if (rounded) {

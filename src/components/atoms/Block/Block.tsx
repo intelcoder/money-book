@@ -11,11 +11,13 @@ function Block({
   flex,
   justify,
   align,
+  flexDirection,
   style = {},
 }: BlockProps) {
   return (
     <StyledBlock
       size={size}
+      flexDirection={flexDirection}
       bgColor={bgColor}
       fluid={fluid}
       rounded={rounded}

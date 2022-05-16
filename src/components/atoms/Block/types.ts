@@ -11,6 +11,7 @@ export interface BlockProps extends ViewProps {
   flex?: number
   justify?: 'center' | 'space-between' | 'flex-start' | 'flex-end' | 'flex'
   align?: 'center' | 'flex-start' | 'flex-end' | 'stretch'
+  flexDirection?: 'column' | 'row'
   style?: StyleProp<ViewStyle>
 }
 

@@ -4,6 +4,7 @@ import HomeSnapshotCard from '@components/modules/HomeSnapshotCard/HomeSnapshotC
 import Block from '@atoms/Block/Block'
 import Text from '@atoms/Text/Text'
 import Button from '@atoms/Button/Button'
+import { colors } from '../../../theme/colors'
 
 export default function Home() {
   const navigation = useNavigation()
@@ -13,10 +14,12 @@ export default function Home() {
       <HomeSnapshotCard amount={1000} />
       <HomeSnapshotCard type="INCOME" amount={400} />
       <Button
+        bgColor="primary"
+        size="md"
         onPress={() => {
           navigation.navigate('Modal', { type: 'expenseForm' })
         }}>
-        <Text>Open Modal</Text>
+        <Text color="white">Open Modal</Text>
       </Button>
     </Block>
   )

@@ -59,11 +59,11 @@ export default function ExpenseForm() {
         <LabelText>Note</LabelText>
         <Input underline />
       </Block>
-      <Block>
-        <Button bgColor="yellow" roundCorner onPress={handleSubmit(onSubmit)}>
+      <Block flexDirection="row">
+        <Button flex="2" bgColor="yellow" size="md" roundCorner onPress={handleSubmit(onSubmit)}>
           <Text>Save</Text>
         </Button>
-        <Button bgColor="red" roundCorner>
+        <Button bgColor="red" size="md" roundCorner>
           <Text>Reset</Text>
         </Button>
       </Block>
